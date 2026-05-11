@@ -1,0 +1,2 @@
+../Core/libraries/FireSensor/FireSensor.c:14:6:FireSensor_Init	1
+../Core/libraries/FireSensor/FireSensor.c:22:9:FireSensor_IsDetected	2

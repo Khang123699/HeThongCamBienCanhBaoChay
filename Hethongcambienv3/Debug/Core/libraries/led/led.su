@@ -1,0 +1,7 @@
+../Core/libraries/led/led.c:4:6:LED_Init	8	static
+../Core/libraries/led/led.c:11:6:LED_Red_On	8	static
+../Core/libraries/led/led.c:15:6:LED_Red_Off	8	static
+../Core/libraries/led/led.c:19:6:LED_Red_Toggle	8	static
+../Core/libraries/led/led.c:24:6:LED_Green_On	8	static
+../Core/libraries/led/led.c:28:6:LED_Green_Off	8	static
+../Core/libraries/led/led.c:32:6:LED_Green_Toggle	8	static

@@ -1,0 +1,3 @@
+../Core/libraries/Servo/Servo.c:8:6:Servo_Init	8	static
+../Core/libraries/Servo/Servo.c:21:6:Servo_SetPulse	16	static
+../Core/libraries/Servo/Servo.c:41:6:Servo_SetAngle	24	static

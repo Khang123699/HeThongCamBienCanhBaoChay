@@ -1,0 +1,5 @@
+../Core/libraries/Buzzer/Buzzer.c:7:6:BUZZER_Init	8	static
+../Core/libraries/Buzzer/Buzzer.c:16:6:BUZZER_On	8	static
+../Core/libraries/Buzzer/Buzzer.c:27:6:BUZZER_Off	8	static
+../Core/libraries/Buzzer/Buzzer.c:37:6:BUZZER_Toggle	8	static
+../Core/libraries/Buzzer/Buzzer.c:47:6:BUZZER_Beep	16	static

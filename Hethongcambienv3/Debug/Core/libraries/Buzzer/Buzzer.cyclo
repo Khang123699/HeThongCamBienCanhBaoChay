@@ -1,0 +1,5 @@
+../Core/libraries/Buzzer/Buzzer.c:7:6:BUZZER_Init	1
+../Core/libraries/Buzzer/Buzzer.c:16:6:BUZZER_On	1
+../Core/libraries/Buzzer/Buzzer.c:27:6:BUZZER_Off	1
+../Core/libraries/Buzzer/Buzzer.c:37:6:BUZZER_Toggle	1
+../Core/libraries/Buzzer/Buzzer.c:47:6:BUZZER_Beep	1

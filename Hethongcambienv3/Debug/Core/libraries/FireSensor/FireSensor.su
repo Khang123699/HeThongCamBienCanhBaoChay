@@ -1,0 +1,2 @@
+../Core/libraries/FireSensor/FireSensor.c:14:6:FireSensor_Init	32	static
+../Core/libraries/FireSensor/FireSensor.c:22:9:FireSensor_IsDetected	8	static
