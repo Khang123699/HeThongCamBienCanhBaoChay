@@ -2,18 +2,18 @@
 > **Dự án tích hợp Vi điều khiển STM32F401, Hệ điều hành thời gian thực (FreeRTOS) và ESP32 Gateway kết nối Firebase & Web Dashboard.**
 
 ## Mục lục
-1. [Giới thiệu dự án](#gioi-thieu-du-an)
-2. [Các công nghệ sử dụng](#cac-cong-nghe-su-dung)
-3. [Sơ đồ kiến trúc & Nguyên lý hoạt động](#so-do-kien-truc--nguyen-ly-hoat-dong)
-4. [Sơ đồ kết nối chân (Pin Mapping)](#so-do-ket-noi-chan-pin-mapping)
-5. [Các mức cảnh báo của hệ thống](#cac-muc-canh-bao-cua-he-thong)
-6. [Cấu trúc thư mục nguồn](#cau-truc-thu-muc-nguon)
-7. [Hướng dẫn cài đặt & Triển khai](#huong-dan-cai-dat--trien-khai)
-8. [Giao diện Web Dashboard](#giao-dien-web-dashboard)
+1. [1. Giới thiệu dự án](#1-giới-thiệu-dự-án)
+2. [2. Các công nghệ sử dụng](#2-các-công-nghệ-sử-dụng)
+3. [3. Sơ đồ kiến trúc và nguyên lý hoạt động](#3-sơ-đồ-kiến-trúc-và-nguyên-lý-hoạt-động)
+4. [4. Sơ đồ kết nối chân (Pin Mapping)](#4-sơ-đồ-kết-nối-chân-pin-mapping)
+5. [5. Các mức cảnh báo của hệ thống](#5-các-mức-cảnh-báo-của-hệ-thống)
+6. [6. Cấu trúc thư mục nguồn](#6-cấu-trúc-thư-mục-nguồn)
+7. [7. Hướng dẫn cài đặt và triển khai](#7-hướng-dẫn-cài-đặt-và-triển-khai)
+8. [8. Giao diện Web Dashboard](#8-giao-diện-web-dashboard)
 
 ---
 
-## Giới thiệu dự án
+## 1. Giới thiệu dự án
 
 Hệ thống **Cảnh báo cháy thông minh** là một giải pháp giám sát an toàn nhà ở và nhà bếp toàn diện. Dự án sử dụng hệ thống hai vi điều khiển (Dual-MCU) giao tiếp thông qua giao thức UART:
 *   **STM32F401 (Chạy FreeRTOS)** đóng vai trò là "Bộ não điều khiển trung tâm" (Core Controller). Nó thực hiện việc thu thập dữ liệu cảm biến thời gian thực, quản lý máy trạng thái (State Machine) cảnh báo, kích hoạt còi báo, hệ thống LED chỉ thị và điều khiển các động cơ Servo tự động mở cửa thoát hiểm/cửa sổ khi có sự cố.
@@ -21,7 +21,7 @@ Hệ thống **Cảnh báo cháy thông minh** là một giải pháp giám sát
 
 ---
 
-## Các công nghệ sử dụng
+## 2. Các công nghệ sử dụng
 
 *   **Firmware STM32**:
     *   **Ngôn ngữ**: C (Chuẩn C99)
@@ -35,7 +35,7 @@ Hệ thống **Cảnh báo cháy thông minh** là một giải pháp giám sát
 
 ---
 
-## Sơ đồ kiến trúc & Nguyên lý hoạt động
+## 3. Sơ đồ kiến trúc và nguyên lý hoạt động
 
 Hệ thống hoạt động dựa trên mô hình xử lý phân tán:
 
@@ -66,7 +66,7 @@ graph TD
 
 ---
 
-## Sơ đồ kết nối chân (Pin Mapping)
+## 4. Sơ đồ kết nối chân (Pin Mapping)
 
 ### 1. Vi điều khiển STM32F401CCU6 (Blackpill)
 
@@ -95,7 +95,7 @@ graph TD
 
 ---
 
-## Các mức cảnh báo của hệ thống
+## 5. Các mức cảnh báo của hệ thống
 
 Hệ thống tự động chuyển đổi hành vi dựa trên kết quả đọc từ các cảm biến:
 
@@ -111,7 +111,7 @@ Hệ thống tự động chuyển đổi hành vi dựa trên kết quả đọ
 
 ---
 
-## Cấu trúc thư mục nguồn
+## 6. Cấu trúc thư mục nguồn
 
 ```text
 HeThongCanhBaoChay/
@@ -144,7 +144,7 @@ HeThongCanhBaoChay/
 
 ---
 
-## Hướng dẫn cài đặt & Triển khai
+## 7. Hướng dẫn cài đặt và triển khai
 
 ### 1. Chuẩn bị phần cứng
 *   1x Board STM32F401CCU6 (Blackpill) & Mạch nạp ST-Link V2.
@@ -174,7 +174,7 @@ HeThongCanhBaoChay/
 
 ---
 
-## Giao diện Web Dashboard
+## 8. Giao diện Web Dashboard
 
 Khi cấp nguồn, ESP32 sẽ phát ra một điểm truy cập WiFi riêng:
 *   **SSID (Tên WiFi)**: `Nhom1_To1`
@@ -188,4 +188,3 @@ Khi cấp nguồn, ESP32 sẽ phát ra một điểm truy cập WiFi riêng:
     *   **Trạng thái hệ thống**: Hiển thị bảng màu cảnh báo tương ứng (Xanh: An toàn | Vàng/Cam: Cảnh báo khí gas/nhiệt độ | Đỏ nhấp nháy: **PHÁT HIỆN CHÁY**).
     *   **Thông số cảm biến**: Giá trị thực tế của cảm biến MQ-2, Nhiệt độ (°C), Độ ẩm (%), Tín hiệu cảm biến lửa.
     *   **Thông tin mạng**: Tên WiFi hiện tại đang kết nối và địa chỉ IP được cấp phát.
-
