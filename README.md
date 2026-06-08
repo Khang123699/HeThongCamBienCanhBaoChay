@@ -56,7 +56,7 @@ graph TD
     subgraph ESP32 ["ESP32 IoT Gateway"]
         UART_Line -->|Nhận & Parse sscanf| ESP32_Core["ESP32 Core Program"]
         ESP32_Core -->|HTTP PATCH /sensor.json| Firebase["Firebase RTDB"]
-        ESP32_Core -->|HTTP POST /history.json (nếu Cháy)| FirebaseHist["History Logs"]
+        ESP32_Core -->|HTTP POST /history.json khi co chay| FirebaseHist["History Logs"]
         ESP32_Core -->|Cung cấp API /data| WebServer["Local Web Dashboard (192.168.4.1)"]
     end
     
