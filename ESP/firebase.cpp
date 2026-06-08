@@ -6,7 +6,7 @@
 #include <WiFiClientSecure.h>
 #include <time.h>
 
-#define DATABASE_URL "https://htcb-37414-default-rtdb.firebaseio.com"
+#define DATABASE_URL "https://hethongcanhbaochay-46db4-default-rtdb.asia-southeast1.firebasedatabase.app"
 
 static bool timeSynced = false;
 static unsigned long lastSend = 0;
