@@ -46,7 +46,7 @@ typedef enum
 /* ================= BIẾN TOÀN CỤC ================= */
 Nhietdo_Data_t thongTinNhietDo;
 uint32_t giaTriMQ2 = 0;
-uint32_t giaTriMQ6 = 0;          /* để dành nếu sau này đọc thêm MQ6 */
+uint32_t giaTriMQ6 = 0;          
 uint8_t phatHienLua = 0;
 uint8_t docDHTThanhCong = 0;
 
