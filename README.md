@@ -24,7 +24,7 @@ Hệ thống **Cảnh báo cháy thông minh** là một giải pháp giám sát
 ## 2. Các công nghệ sử dụng
 
 *   **Firmware STM32**:
-    *   **Ngôn ngữ**: C (Chuẩn C99)
+    *   **Ngôn ngữ**: C
     *   **HĐH thời gian thực**: FreeRTOS (CMSIS_OS2 API) để quản lý đa tác vụ đa nhiệm.
     *   **Công cụ**: STM32CubeMX & STM32CubeIDE.
 *   **Firmware ESP32 (Gateway)**:
