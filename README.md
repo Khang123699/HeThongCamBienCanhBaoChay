@@ -122,7 +122,7 @@ HeThongCanhBaoChay/
 │   ├── web.h / web.cpp          # Quản lý WiFi AP/STA, HTML portal & Local Dashboard
 │   └── firebase.h / firebase.cpp# Giao tiếp Firebase qua HTTP REST API & đồng bộ NTP
 │
-├── Hethongcambienv3/            # Firmware cho STM32F401 (STM32CubeIDE)
+├── stm32-freeRTOS/              # Firmware cho STM32F401 (STM32CubeIDE)
 │   ├── Core/
 │   │   ├── Src/
 │   │   │   ├── main.c           # File sinh mặc định của CubeMX, gọi hàm KhoiTao()
@@ -158,7 +158,7 @@ HeThongCanhBaoChay/
 
 ### 2. Triển khai Firmware cho STM32
 1.  Tải và cài đặt phần mềm [STM32CubeIDE].
-2.  Mở thư mục `Hethongcambienv3` bằng STM32CubeIDE.
+2.  Mở thư mục `stm32-freeRTOS` bằng STM32CubeIDE.
 3.  Biên dịch dự án.
 4.  Kết nối ST-Link V2 từ máy tính sang mạch STM32 và tiến hành nạp chương trình (`Run` / `Debug`).
 
