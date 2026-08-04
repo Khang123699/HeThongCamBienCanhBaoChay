@@ -5,7 +5,7 @@
 
 WebServer server(80);
 
-const char* ap_ssid     = "Nhom1_To1";
+const char* ap_ssid     = "HeThongCanhBaoChay";
 const char* ap_password = "12345678";
 
 String currentSSID = "NOT_CONNECTED";
